@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Kang Sarah ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;min-height:100vh;padding:20px;display:flex;align-items:center;justify-content:center;
+ font-family:Georgia,"Times New Roman",serif;background:linear-gradient(135deg,#ffeef3,#ffd6e2);
+ color:#4b2932;overflow-x:hidden
+}
+.card{
+ width:100%;max-width:720px;background:#fffdfd;padding:38px 30px;border-radius:22px;
+ box-shadow:0 15px 40px rgba(100,35,55,.2);text-align:left;border:1px solid #f2c5d1
+}
+.heart{text-align:center;font-size:48px;animation:pulse 1.5s infinite;color:#d65373}
+h1{text-align:center;color:#a83f5b;font-size:30px;margin:8px 0 25px}
+p{font-size:18px;line-height:1.8;margin:15px 0}
+.quote{
+ background:#fff0f4;border-left:4px solid #d65373;padding:18px;margin:25px 0;
+ text-align:center;font-style:italic;line-height:1.7;border-radius:8px
+}
+.signature{text-align:right;margin-top:28px;font-size:18px}
+.name{font-size:22px;font-weight:bold;color:#a83f5b}
+.ask{text-align:center;margin-top:35px;padding-top:25px;border-top:1px solid #f1d1da}
+.ask h2{color:#a83f5b;font-size:23px}
+.buttons{display:flex;justify-content:center;gap:18px;margin-top:20px;position:relative;height:55px}
+button{
+ border:0;border-radius:25px;padding:13px 30px;font-size:17px;cursor:pointer;
+ font-family:inherit;transition:.25s
+}
+#yes{background:#c84e6c;color:white;box-shadow:0 5px 12px rgba(200,78,108,.25)}
+#yes:hover{transform:scale(1.06)}
+#no{background:#ddd;color:#555;position:relative}
+#answer{display:none;margin-top:25px}
+.final{
+ background:#fff0f4;padding:20px;border-radius:12px;text-align:center;
+ color:#963d57;font-size:19px;line-height:1.7
+}
+.small{font-size:14px;color:#8c6872;text-align:center;margin-top:20px}
+@keyframes pulse{50%{transform:scale(1.12)}}
+@media(max-width:600px){
+ .card{padding:30px 20px}h1{font-size:25px}p{font-size:16px}
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+ <div class="heart">♥</div>
+ <h1>Para Kang Sarah Daulong</h1>
+
+ <p><b>Good morning, ang pinakamagandang babae para sa akin. 🌷</b></p>
+
+ <p>Hi Sarah, ako si Roldan, akoang gugma kanimo. Gusto lang nako nga mahimong unang butang nga makapahiyom nimo karong buntaga.</p>
+
+ <p>
+ Para nako, dili lang kay gwapa ka. Buotan ka, kind, ug adunay ka'y kasingkasing nga
+ makapahimuot sa mga tawo sa imong palibot. Mao na nga mas ganahan ko nga mailhan pa ka.
+ </p>
+
+ <div class="quote">
+ “Siguro mipahiyom ang Ginoo sa adlaw nga iyang gipinta ang imong kalag,
+ kay bisan ang labing hayag nga bituon, murag kulang pa kung itandi kanimo.”
+ </div>
+
+ <p>
+ Sarah, dili ko gusto nga magdali ka. Gusto lang nako nga mahibalo ka nga tinuod akong
+ pag-admire nimo. Kung hatagan ko nimo og higayon, gusto ko nga mahimong tawo nga
+ motahod, mosuporta, ug mag-atiman kanimo.
+ </p>
+
+ <p>
+ Ug kung swertehon ko sa umaabot, dili lang unta ka mahimong akong girlfriend,
+ kundi <b>ikaw ang gusto nako nga mahimong akong future wife.</b> ❤️
+ </p>
+
+ <p>
+ Bisan unsa imong tubag, respetohon nako. Salamat sa pagbasa ani nga simple nga sulat.
+ Hinaot nga mahimong nindot ug hayag imong adlaw, sama sa imong pahiyom.
+ </p>
+
+ <div class="signature">
+  Akoang gugma kanimo,<br>
+  <span class="name">Roldan ❤️</span>
+ </div>
+
+ <div class="ask">
+  <h2>Sarah, pwede ba ko mahimong parte sa imong future? 💍</h2>
+  <p style="text-align:center;font-size:15px">Dili kinahanglan magdali. Usa lang ka tubag. 😊</p>
+
+  <div class="buttons">
+   <button id="yes" onclick="sayYes()">YES ❤️</button>
+   <button id="no" onmouseover="moveNo()" ontouchstart="moveNo()">NO</button>
+  </div>
+
+  <div id="answer">
+   <div class="final">
+    ✨ “Kung ang imong tubag kay YES, hinaot nga dili lang kini usa ka tubag,
+    kundi sinugdanan sa usa ka istorya nga atong isulat uban.” ✨<br><br>
+    <b>Salamat sa paghatag og higayon, Sarah. ❤️</b>
+   </div>
+  </div>
+ </div>
+
+ <div class="small">Made with sincerity by Roldan, your love.</div>
+</div>
+
+<script>
+function sayYes(){
+ document.getElementById("answer").style.display="block";
+ document.getElementById("yes").innerHTML="YES ❤️ Salamat!";
+}
+function moveNo(){
+ const no=document.getElementById("no");
+ const x=(Math.random()*180)-90;
+ const y=(Math.random()*100)-50;
+ no.style.transform=`translate(${x}px,${y}px)`;
+}
+</script>
+
+</body>
+</html>
